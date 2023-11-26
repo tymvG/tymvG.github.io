@@ -1,0 +1,504 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/* 清除浮动 */
+.clearfix:before, .clearfix::after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+/* 清除浮动,内外边距 */
+
+/* 版心区域 */
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 阶段一~头部 */
+.header {
+  height: 41px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* logo区域 */
+h1 {
+  float: left;
+  margin-right: 61px;
+}
+
+/* 导航区域 */
+.nav {
+  float: left;
+  height: 41px;
+  line-height: 41px;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  display: inline-block;
+  margin-right: 27px;
+  padding: 0 9px;
+  font-size: 18px;
+  color: #050505;
+  height: 41px;
+}
+.nav li:hover a {
+  border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索框区域 */
+.search {
+  float: left;
+  margin-left: 58px;
+  width: 412px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+}
+.search input {
+  float: left;
+  width: 360px;
+  height: 39px;
+  border: 0;
+  padding-left: 21px;
+}
+.search input::placeholder {
+  font-size: 14px;
+  color: #bfbfbf;
+}
+.search button {
+  float: left;
+  width: 50px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  background-image: url(../images/sin01.jpg);
+}
+
+/* 个人用户区域 */
+.user {
+  float: left;
+  line-height: 41px;
+  margin-left: 30px;
+}
+.user img {
+  vertical-align: middle;
+}
+.user span {
+  font-size: 14px;
+  color: #666;
+  font-weight: 700;
+}
+
+/* 阶段二~轮播图阶段 */
+.banner {
+  height: 420px;
+  background-color: #1c036c;
+}
+
+/* 左侧课程 */
+.carte {
+  float: left;
+  width: 190px;
+  height: 420px;
+  background-color: rgba(0,0,0,0.3);
+}
+.carte a {
+  display: block;
+  line-height: 44px;
+  padding-left: 20px;
+  padding-right: 21px;
+  font-size: 14px;
+  color: #fff;
+}
+.carte span {
+  float: right;
+}
+.carte a:hover {
+  color: #00b4ff;
+}
+
+/* 中间轮播图 */
+.carousel {
+  position: relative;
+  float: left;
+  width: 780px;
+  height: 420px;
+  background-color: orange;
+}
+.carousel .carousel-img  img {
+  width: 780px;
+  height: 420px;
+}
+.arrow a {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 40px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+}
+.arrow a.left {
+  left: 0;
+}
+.arrow a.right {
+  right: 0;
+}
+/* 小圆点 */
+.round {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  bottom: 20px;
+  width: 300px;
+  height: 20px;
+}
+.round .dot {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: white;
+}
+.round .active {
+  background-color: red;
+}
+
+/* 右侧课程表 */
+.form {
+  margin-top: 50px;
+  float: right;
+  width: 230px;
+  height: 300px;
+  background-color: #fff;
+}
+.form h4 {
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #9bceea;
+}
+.kechen {
+  padding: 15px 18px 0 18px;
+}
+.kechen p {
+  font-size: 16px;
+  color: #4e4e4e;
+  font-weight: 700;
+}
+.kechen span {
+  display: block;
+  font-size: 12px;
+  color: #a5a5a5;
+  font-weight: 700;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.quanbukecheng {
+  margin: 5px auto;
+  width: 200px;
+  height: 41px;
+  border: 1px solid #00a4ff;
+}
+.quanbukecheng a {
+  display: block;
+  font-size: 16px;
+  color: #00a4ff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 41px;
+}
+/* 阶段三~精品推荐栏 */
+.jingpintuijian {
+  margin-top: 8px;
+  height: 60px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  box-shadow: 0px 2px 3px 0px 
+		rgba(118, 118, 118, 0.2);
+}
+.jingpintuijian h3 {
+  float: left;
+  padding-left: 34px;
+  padding-right: 34px;
+  font-size: 16px;
+  color: #00a4ff;
+}
+.jingpintuijian li {
+ float: left;
+}
+.jingpintuijian li a {
+  padding: 0 35px;
+  font-size: 16px;
+  color: #050505;
+  border-left: 1px solid #bfbfbf;
+}
+.jingpintuijian .xiugaixinqu {
+  float: right;
+  margin-right: 26px;
+  font-size: 14px;
+  color: #00a4ff;
+}
+/* 阶段四~精品推荐课程 */
+/* 标题区域 */
+.jingpingtuijian {
+  margin-top: 35px;
+}
+.jingpingtuijian .title {
+  height: 40px;
+}
+.jingpingtuijian .title h3 {
+  float: left;
+  font-size: 20px;
+  color: #494949;
+  font-weight: normal;
+}
+.jingpingtuijian .title a {
+  float: right;
+  padding-top: 20px;
+  padding-right: 35px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+/* 内容区域 */
+.shipinneirong li {
+float: left;
+ width: 228px;
+ height: 270px;
+ margin-right: 15px;
+ margin-bottom: 15px;
+ background-color: #f5f5f5;
+}
+.shipinneirong li:nth-child(5n) {
+  margin-right: 0;
+}
+.shipinneirong li img {
+  width: 100%;
+  height: 157px;
+}
+.shipinneirong li h4 {
+  padding: 25px 20px 20px 24px;
+  font-size: 14px;
+  color: #050505;
+  font-weight: normal;
+}
+.shipinneirong li p {
+  padding-left: 24px;
+  font-size: 12px;
+  color: #999999;
+}
+.shipinneirong li span {
+  color: #ff7c2d;
+}
+/*  阶段五~编程入门 */
+.bcrm {
+  margin-top: 38px;
+}
+.bcrm .biaoti {
+  height: 41px;
+}
+.bcrm .biaoti h3 {
+  float: left;
+  margin-right: 352px;
+  font-size: 20px;
+  color: #494949;
+  font-weight: normal;
+}
+.bcrm .biaoti li {
+  float: left;
+}
+.bcrm .biaoti li a {
+  display: inline-block;
+  padding-right: 70px;
+  font-size: 16px;
+  color: #868686;
+}
+.bcrm .biaoti li a:hover {
+  color: #00a4ff;
+}
+.bcrm .biaoti .ckqb {
+  float: right;
+  margin-right: 40px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+/* 内容区域 */
+.phprumen .left {
+  float: left;
+  width: 228px;
+  height: 392px;
+}
+.left img {
+  width: 228px;
+}
+.right {
+  float: left;
+  margin-left: 15px;
+  width: 957px;
+  height: 392px;
+}
+.phprumen .right .top {
+  float: left;
+  width: 957px;
+  height: 100px;
+}
+.right .top img {
+  height: 100px;
+}
+.phprumen .right .bottom {
+  float: left;
+  width: 228px;
+  height: 270px;
+  margin-top: 23px;
+  margin-right: 15px;
+  background-color: #f5f5f5;
+}
+.phprumen .right .bottom:nth-child(5n) {
+   margin-right: 0;
+}
+.bottom img {
+  width: 100%;
+  height: 157px;
+}
+.right .bottom h4 {
+  padding: 25px 20px 20px 24px;
+  font-size: 14px;
+  color: #050505;
+  font-weight: normal;
+}
+.right .bottom p {
+  padding-left: 24px;
+  font-size: 12px;
+  color: #999999;
+}
+.right .bottom span {
+  color: #ff7c2d;
+}
+/* 阶段六~前端开发工程师 */
+/* 标题 */
+.qdkfgcs {
+  margin-top: 39px;
+}
+.qdbiaoti {
+  height: 37px;
+}
+.qdbiaoti h3 {
+  float: left;
+  margin-right: 291px;
+  font-size: 20px;
+  color: #494949;
+  font-weight: normal;
+}
+.qdbiaoti li {
+  float: left;
+}
+.qdbiaoti li a {
+  padding-right: 73px;
+  font-size: 16px;
+  color: #868686;
+}
+.qdbiaoti li a:hover {
+  color: #00a4ff;
+}
+.qdbiaoti .qdchakanquanbu {
+  float: right;
+  margin-right: 40px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+/* 内容 */
+.qdkfnr li {
+  float: left;
+  width: 228px;
+  height: 270px;
+  margin-right: 15px;
+  background-color: #f5f5f5;
+}
+.qdkfnr li:nth-child(5n) {
+  margin-right: 0;
+}
+.qdkfnr li img {
+  width: 100%;
+  height: 157px;
+}
+.qdkfnr li h4 {
+  padding: 25px 20px 20px 24px;
+  font-size: 14px;
+  color: #050505;
+  font-weight: normal;
+}
+.qdkfnr li p {
+  padding-left: 24px;
+  font-size: 12px;
+  color: #999999;
+}
+.qdkfnr li span {
+  color: #ff7c2d;
+}
+/*  阶段七~尾部 */
+.wb {
+  margin-top: 40px;
+  padding-top: 33px;
+  height: 417px;
+  background-color: #f5f5f5;
+}
+.wb .wbleft {
+  float: left;
+}
+.wb .wbleft img {
+  height: 41px;
+  cursor: pointer;
+}
+.wb .wbleft p {
+  margin-top: 66px;
+}
+.wb .wbleft a {
+  display: block;
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #00a4ff;
+  border: 1px solid #00a4ff;
+}
+.wb .wbrigth {
+  float: right;
+}
+.wbrigth dl {
+  float: left;
+  margin-left: 120px;
+}
+.wbrigth dd a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
+.wbrigth dd a:hover {
+  color: #00a4ff;
+}
